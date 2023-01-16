@@ -7,6 +7,9 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: ssafy
             TZ: Asia/Seoul
+        command:
+            - --character-set-server=utf8
+            - --collation-server=utf8_general_ci
         ports:
             - 3306:3306
         volumes:
